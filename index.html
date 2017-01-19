@@ -83,7 +83,6 @@
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Schools attending the conference
 </button>
-
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -120,6 +119,7 @@
     </div>
   </div>
 </div>
+                    
                   <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   AAA
@@ -143,6 +143,8 @@
     </div>
   </div>
 </div>
+
+
                 </div>
             </div>
           
@@ -273,11 +275,14 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+  
         
-        $(".btn").click(function(){
-  var id = $(this).attr('id');
-  $(id).modal('show');
+        $(document).on('hidden.bs.modal', function (e) {
+    var target = $(e.target);
+    target.removeData('bs.modal')
+    .find(".modal-body").html('');
 });
+
     </script>
 
 </body>
