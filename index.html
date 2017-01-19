@@ -114,7 +114,6 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -157,12 +156,51 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+           <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+  Kenny Peavey (Keynote)
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Burst Your Bubble Activities</h4>
+      </div>
+      <div class="modal-body2">
+          <img src="kenny-nature Bio .jpg" height="42" width="42">
+<p>Kenny Peavy Bio- Bangkok Patana ServICE 2017
+
+Kenny loves getting people outdoors playing and exploring so they discover a connection with Nature and learn to respect and take care of the planet we all share. 
+
+He’s ridden a bamboo bike across South East Asia to raise awareness for sustainability in the region.  He also likes to Rock for the Environment with music, arts and cultural shows to raise funds for conservation.  
+
+In April 2014, Kenny paddled around Phuket, Thailand in a kayak with the GREEN Paddlers to teach people about marine conservation issues in the region.
+
+Most recently, he initiated the Buy A Book, Support a Village program using his books and publications to raise funds to empower women in Southeast Asia, promote literacy and support conservation projects in the region.
+
+As a result of his dedication to the environment, environmental education and conservation he’s been awarded Volunteer of the Year by both the Georgia Adopt-A-Stream Organization in the USA and the Malaysian Nature Society in Kuala Lumpur, Malaysia.
+
+Nowadays, he leads Education Outside The Classroom expeditions all over Southeast Asia to inspire students and teachers to make a deep connection with Nature and take action for a sustainable future!
+
+For more information please see his website:  
+
+http://theearthmatters.asia/ 
+          </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
                 </div>
             </div>
@@ -230,6 +268,11 @@ $('#myModal').on('shown.bs.modal', function () {
 </script>
     <script>
 $('#myModal1').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+    <script>
+$('#myModal2').on('shown.bs.modal', function () {
   $('#myInput').focus()
 })
 </script>
