@@ -273,6 +273,11 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+        
+        $(".btn").click(function(){
+  var id = $(this).attr('id');
+  $(id).modal('show');
+});
     </script>
 
 </body>
